@@ -1,0 +1,47 @@
+# ═══════════════════════════════════════════════════════════
+# Amazon ML Challenge 2026 — .gitignore
+# ═══════════════════════════════════════════════════════════
+
+# ── Dataset (large TSV files — NOT tracked in git) ────────
+# See dataset/README.md for expected structure
+dataset/**/*.tsv
+dataset/**/*.parquet
+
+# ── Cache (Parquet files generated at runtime) ────────────
+cache/
+
+# ── Output (generated submission files) ───────────────────
+output/
+
+# ── Python bytecode ──────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ── Virtual environments ─────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── IDE / Editor ─────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ── Jupyter / IPython ────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Model artifacts (too large for git) ──────────────────
+*.pkl
+*.joblib
+*.model
+
+# ── OS files ─────────────────────────────────────────────
+Thumbs.db
+.DS_Store
